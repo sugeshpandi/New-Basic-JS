@@ -76,6 +76,26 @@ console.log(c);
 // logical 
 // and && or || not !
 
-console.log(true&&true)
-console.log(true||false)
-console.log(!false)
+console.log("AND",true&&true)
+console.log("OR",true||false)
+console.log("NOT",!false)
+
+//object
+
+var car ={}
+ 
+car.name  = "audi";
+car.color  = "white";
+car.year  = "2021";
+
+console.table(car);
+
+// user input
+var rate = prompt("hi guys")
+if (rate) {
+    console.log(rate ?? "you didn't enter");
+}
+else {
+    console.log("you not enter anything")
+}
+console.log(rate.trim().length);
